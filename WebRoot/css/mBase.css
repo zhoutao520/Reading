@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*初始化样式*/
+body, p, ul, dl, dd, ol, table {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  line-height: 1.5;
+}
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+a {
+  outline: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s,background-color .3s;
+  color: #262626;
+  /*  -webkit-tap-highlight-color:rgba(0,0,0,0);*/
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  box-sizing: border-box;
+  height: 1.87733rem;
+  padding-top: 0.46933rem;
+  padding-bottom: 0.42667rem;
+}
+
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}

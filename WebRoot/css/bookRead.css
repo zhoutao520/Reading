@@ -1,0 +1,273 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul{
+	    list-style: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #c2c2c2;
+    background-clip: padding-box;
+    border: 1px solid #979797;
+    min-height: 28px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #E9E9E9;
+    border-left: 1px solid #d2d2d2;
+}
+.cur{
+	font-weight: 700;
+    background: #eaeaea;
+}
+#app{
+	    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: url(../img/bg.png);
+}
+#app .panel{
+	position: fixed;
+    left: 50%;
+    z-index: 99;
+    width: 660px;
+    height: 65px;
+    margin-left: -330px;
+}
+#app .panel .title{
+	box-shadow: none;
+    height: 28px;
+    color: #666;
+    font-size: 14px;
+    padding: 36px 0 7px;
+    width: 100%;
+    border-bottom: #dedede solid 1px;
+    background: url(../img/bg_mini.png);
+}
+#app .panel>ul{
+	    position: absolute;
+    right: 0;
+    font-size: 12px;
+    top: 37px;
+    width: 305px;
+    z-index: 10;
+}
+#app .panel>ul .chap{
+	width: 70px;
+    height: 25px;
+        line-height: 25px;
+            color: #aeadad;
+}
+#app .panel>ul .chap:hover{
+	color: #000;
+}
+#app .panel>ul li{
+	float: right;
+    display: inline;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+#app .panel>ul li a{
+	width: 25px;
+    height: 25px;
+    overflow: hidden;
+    text-indent: -9999px;
+    display: block;
+}
+#app .panel>ul li .cata{
+	background: url(../img/b6.png) no-repeat;
+	background-position:0 0;
+}
+#app .panel>ul li .font{
+	background: url(../img/b6.png) no-repeat;
+	background-position:-55px 0;
+}
+#app .panel .catalog{
+	    background: #f4f4f4;
+    border: #ccc solid 1px;
+    position: absolute;
+    top: 71px;
+    width: 658px;
+    z-index: 2;
+        display: none;
+}
+#app .panel .font-li{
+	    background: #efefef;
+    border: #e0e0e0 solid 1px;
+    position: absolute;
+    top: 71px;
+    z-index: 2;
+    color: #9d9d9d;
+    right: -8px;
+    padding: 5px;
+    display: none;
+}
+#app .panel .show{
+	animation: i-r .12s ease-out;
+    display: block;
+}
+#app .panel .font-li i{
+	    width: 14px;
+    height: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    right: 57px;
+    background: url(../img/b3.png) no-repeat;
+}
+#app .panel .font-li li {
+    width: 29px;
+    height: 29px;
+    overflow: hidden;
+    display: inline;
+    float: left;
+}
+.font-li li a {
+    width: 29px;
+    height: 29px;
+    display: block;
+    background: url(../img/b14.png) no-repeat;
+    text-indent: -9999px;
+}
+.font14 a:hover, .font14 .on {
+    background-position: 0 -29px;
+}
+.font16 a:hover, .font16 .on {
+    background-position: -29px -29px;
+}
+.font18 a:hover, .font18 .on {
+    background-position: -58px -29px;
+}
+.font22 a:hover, .font22 .on {
+    background-position: -87px -29px;
+}
+.font14 a {
+    background-position: 0 0;
+}
+.font16 a {
+    background-position: -29px 0;
+}
+.font18 a {
+    background-position: -58px 0;
+}
+.font22 a {
+    background-position: -87px 0;
+}
+#app .panel .catalog .catainner{
+	    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 2em 0;
+    height: 330px;
+}
+#app .panel .catalog .catainner .angle{
+	width: 14px;
+    height: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    background: url(../img/b3.png) no-repeat;
+}
+#app .panel .catalog .catainner .close{
+	position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    right: 28px;
+    cursor: pointer;
+    background: url(../img/b17.png) no-repeat;
+}
+#app .panel .catalog .catainner h2{
+	    text-align: center;
+    font-size: 1.5em;
+    color: #4f4f4f;
+    line-height: 4em;
+    margin-top: -32px;
+}
+#app .panel .catalog .catainner .bd{
+	    margin: 0 57px;
+    line-height: 3em;
+}
+#app .panel .catalog .catainner .bd ul li{
+	line-height: 39px;
+    height: 39px;
+    border-bottom: #bcbcbc dashed 1px;
+}
+#app .panel .catalog .catainner .bd ul li a{
+	    color: #2b2b2b;
+	        text-decoration: none;
+    font-size: .875em;
+    outline: 0;
+        line-height: 39px;
+}
+#app .panel .catalog .catainner .bd ul li:hover{
+	    background: #eaeaea;
+}
+#app .chapter{
+	height: 100%;
+    overflow: hidden;
+}
+#app .chapter .page{
+	    width: 880px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+#app .chapter .page .top{
+	box-shadow: 3px -3px 8px -3px #838383;
+	height: 66px;
+    position: relative;
+    z-index: 2;
+    background: url(../img/bg_mini.png);
+}
+#app .chapter .page .article{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -6px;
+    float: left;
+    z-index: 1;
+}
+#app .chapter .page .article .box{
+    width: 100%;
+    font-size: 16px;
+}
+#app .chapter .page .article .box .content{
+	    min-height: 434px;
+	    box-shadow: 3px 3px 8px -3px #838383;
+	        padding: 40px 110px 10px;
+    margin-bottom: 20px;
+    border-left: 0;
+        background: url(../img/bg_mini.png);
+}
+#app .chapter .page .article .box .content .ne-content{
+	    min-height: 517px;
+	    position: static;
+    overflow: visible;	
+        width: 100%;
+            z-index: 1;
+}
+#app .chapter .page .article .box .content .ne-content h1{
+	    font-size: 2em;
+	        font-family: Microsoft YaHei,'黑体';
+    text-indent: 0;
+    color: #933;
+    margin-bottom: 1em;
+        text-align: justify;
+    word-break: break-all;
+}
+#app .chapter .page .article .box .content .ne-content  p{
+	    text-indent: 2em;
+    margin-bottom: 16px;
+    text-align: justify;
+        word-break: break-all;
+                line-height: 30px;
+                    letter-spacing: 1px;
+}

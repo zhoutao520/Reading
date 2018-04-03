@@ -1,0 +1,66 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>阅读作品-览书网</title>
+    <link rel="Shortcut Icon" href="../img/slogo.ico" >
+    <link rel="stylesheet" href="../css/bookRead.css"/>
+    <script src="../assets/vue.js"></script>
+    <script src="../assets/axios.js"></script>
+</head>
+	<body>
+		<div id="app">
+			<div class="panel">
+				<div class="title" v-text="chapter.name"></div>
+				<ul>
+					<li><a title="目录" @click="cata=!cata" class="cata">目录</a></li>
+					<li><a title="字号" @click="font=!font" class="font">字号</a></li>
+					<li class="chap" @click="chap(1)">下一章</li>
+					<li class="chap" @click="chap(0)">上一章</li>
+				</ul>
+				<div class="catalog" :class="cata&&'show'">
+					<div class="catainner">
+						<i class="angle"></i>
+						<h2>目录</h2>
+						<div class="bd">
+							<ul>
+								<li v-for="item in chapters" :class="item.id==chapter.id&&'cur'"><a :href="'bookRead.jsp?bookId='+bookId+'&chapterId='+item.id" v-text="item.name"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="font-li" :class="font&&'show'">
+					<i></i>
+					<ul>
+						<li class="font14"><a href="javascript:void(0);" :class="fontSize=='14px'&&'on'" @click="fontSize='14px'"></a></li>
+						<li class="font16"><a href="javascript:void(0);" :class="fontSize=='16px'&&'on'" @click="fontSize='16px'"></a></li>
+						<li class="font18"><a href="javascript:void(0);" :class="fontSize=='18px'&&'on'" @click="fontSize='18px'"></a></li>
+						<li class="font22"><a href="javascript:void(0);" :class="fontSize=='22px'&&'on'" @click="fontSize='22px'"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="chapter">
+				<div class="page">
+					<div class="top"></div>
+					<div class="article">
+						<div class="box">
+							<div class="content">
+								<div class="ne-content" :style="{fontSize:fontSize}">
+									<h1 v-text="chapter.name"></h1>
+									<p v-html="content"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+  <script src="../js/bookRead.js"></script>
+</html>

@@ -1,0 +1,150 @@
+
+article {
+  width: 980px; }
+  article .nav-list {
+    width: 240px;
+    float: left;
+    border: 1px solid #dcdddd; }
+    article .nav-list .category {
+      border-bottom: 0; }
+     article .nav-list  .nav-item{
+     	padding-left:50px;
+     }
+      article .nav-list .category a {
+        font-size: 15px;
+        line-height: 40px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff; }
+
+      article .nav-list .category ul li {
+      padding-left:70px;
+        border-bottom: 1px dotted #dedede; }
+        article .nav-list .category ul li:hover{
+        background-color:#f4f4f4;
+        }
+        article .nav-list .category ul li a {
+          text-indent: 30px;
+          font-size: 13px; }
+      article .nav-list .category .nav-item {
+        border-bottom: 1px dotted #dedede; }
+        article .nav-list .category .nav-item:hover{
+        background-color:#f4f4f4;
+        }
+        article .nav-list .category .nav-item .trigger {
+          width: 10px;
+          height: 10px;
+          margin-right: 4px;
+          background-position: -50px -460px; }
+      article .nav-list .category ul {
+        display: none; }
+    article .nav-list .category-active .trigger {
+      background-position: -50px -471px !important; }
+    article .nav-list .category-active ul {
+      display: block; }
+  article .content {
+    width: 720px;
+    float: right; }
+      article .content .null{
+      margin: 120px 0 0 230px;
+      }
+       article .content .null img{
+       margin-right: 10px;
+           float: left;
+               width: 45px;
+    height: 45px;
+       }
+       article .content .null h2{
+       	font-size:16px;
+       	line-height:45px;
+       }
+        article .content .page{
+            height: 32px;
+    margin: 25px 0;
+    text-align: center;
+        }
+        
+    article .content .sort {
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #dedede; }
+      article .content .sort dt {
+        float: left;
+        width: 70px;
+        display: block;
+        line-height: 33px; }
+      article .content .sort .sort-category {
+        border-top: none; }
+      article .content .sort dd {
+        margin-left: 70px;
+        border-top: 1px dotted #dedede; }
+        article .content .sort dd li {
+          display: inline-block;
+          line-height: 33px;
+          padding: 0 10px; }
+    article .content .book-content {
+      padding: 20px 20px;
+      border: 1px solid #dcdddd;
+      min-height:700px; }
+      article .content .book-content li {
+        float: left;
+        width: 339px;
+        height: 162px;
+        display: list-item; }
+        article .content .book-content li:hover{
+        background-color:#fafafa;
+        }
+        article .content .book-content li:first-child, article .content .book-content li:first-child + li {
+          padding-top: 0;
+          border-top: none; }
+        article .content .book-content li .book-img {
+          position: relative;
+          z-index: 3;
+          width: 102px;
+          height: 136px;
+          margin-right: 16px;
+          float: left; }
+          article .content .book-content li .book-img a {
+            display: block;
+            overflow: hidden;
+            width: 102px;
+            height: 136px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35); }
+            article .content .book-content li .book-img a img {
+              width: 102px;
+              height: 136px;
+              border: none; }
+        article .content .book-content li .book-info {
+          width: 200px;
+          margin-top: 5px;
+          float: left; }
+          article .content .book-content li .book-info h4 {
+            font-size: 18px;
+            line-height: 24px;
+            overflow: hidden;
+            height: 24px;
+            margin-bottom: 8px; }
+          article .content .book-content li .book-info .intro {
+            font-size: 14px;
+            line-height: 24px;
+            overflow: hidden;
+            height: 48px;
+            margin-bottom: 8px;
+            color: #666;
+            text-overflow:ellipsis; }
+          article .content .book-content li .book-info span {
+            color: #a6a6a6; }
+          article .content .book-content li .book-info i {
+            line-height: 16px;
+            margin: 0 3px;
+            color: #a6a6a6; }
+          article .content .book-content li .book-info em {
+            font-style: normal;
+            margin: 1px 8px 0;
+            color: #e6e6e6; }
+    article .content .page {
+      height: 32px;
+      margin: 25px 0;
+      text-align: center; }
+
+/*# sourceMappingURL=category.css.map */

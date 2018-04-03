@@ -1,0 +1,210 @@
+.main{
+    position: relative;
+	width: 980px;
+    margin: 40px auto;
+    overflow:hidden;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.main nav{
+	width: 178px;
+    float: left;
+    border: #ddd solid 1px;
+    min-height:300px;
+}
+.main nav ul li{
+	height: 36px;
+    line-height: 36px;
+    border-bottom: #ddd dotted 1px;
+    list-style: none outside none;
+}
+.main nav ul li a{
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    border-top: #fff solid 1px;
+    border-bottom: #fff solid 1px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #333;
+}
+.main nav ul li a span{
+	    margin-left: 5px;
+}
+.main nav ul li a:hover{
+	color: #ed4259;
+}
+.active{
+	background: #ddd;
+}
+.active a{
+	border:none!important;
+}
+.mainbox{
+	    width: 698px;
+	        min-height: 235px;
+    padding: 35px 30px 30px 30px;
+    float: right;
+    border: #ddd solid 1px;
+}
+.mainbox dl{
+	    margin: 0;
+    padding: 15px 0;
+        font-size: 15px;
+    line-height: 30px;
+}
+.mainbox dl dt{
+	    display: inline-block;
+    min-width: 75px;
+    text-align: right;
+    vertical-align: top;
+    color: #a6a6a6;
+}
+.mainbox dl dd{
+	    display: inline-block;
+    margin: 0 0 0 12px;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 30px;
+}
+.mainbox dl dd input[type="text"]{
+	  border: #bbbbbb solid 1px;
+  border-radius: 3px;
+  padding: 4px 3px;
+  width: 230px;
+  line-height: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: #fff;
+  color: #333;
+}
+.mainbox dl dd input[type="password"]{
+	  border: #bbbbbb solid 1px;
+  border-radius: 3px;
+  padding: 4px 3px;
+  width: 230px;
+  line-height: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: #fff;
+  color: #333;
+}
+.mainbox dl dd .head-upload {
+  width: 92px;
+  height: 92px;
+  position: relative;
+  border: #bbb solid 1px;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.mainbox dl dd .head-upload .upload {
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  top: 0;
+  align-items: baseline;
+  color: inherit;
+  text-align: start;
+  background-color: initial;
+  padding: initial;
+  border: initial;
+  margin: 0;
+  opacity: 0;
+}
+
+.mainbox dl dd .head-upload .pic {
+  overflow: hidden;
+  width: 92px;
+  height: 92px;
+  position: relative;
+      padding: 2px;
+}
+.mainbox dl dd .head-upload .pic img {
+  width: 88px;
+  height: 88px;
+}
+
+.mainbox dl dd .head-upload .pic .mask {
+  position: absolute;
+    left: 0;
+    bottom: 4px;
+  width: 92px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+  background: #000;
+  opacity: 0.3;
+}
+.mainbox dl dd a{
+	    color: #3f5895;
+}
+.mainbox dl dd .profile{
+	    width: 324px;
+	position: relative;
+    overflow: hidden;
+    padding: 2px 9px 32px 3px;
+}
+.mainbox dl dd .profile textarea{
+	    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    z-index: 1;
+    right: -6px;
+    display: block;
+    overflow: auto;
+    width: 100%;
+    padding: 7px 0 9px;
+    resize: none;
+    word-break: break-all;
+    color: #3e3d43;
+    border: 0 none;
+    outline: 0;
+    background: 0 0;
+}
+.mainbox dl dd .profile .profile-border{
+	    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: border-color .15s,background-color .15s;
+    border: 1px solid #e0deda;
+    background-color: #fff;
+}
+.mainbox dl dd .profile .count{
+	    font-size: 12px;
+    line-height: 32px;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    bottom: 0;
+    left: 8px;
+    text-align: right;
+    color: #a6a6a6;
+}
+.mainbox dl dd.submit{
+	width:100px;
+	height:35px;
+	line-height:35px;
+	background:#bf2c24;
+	color:#fff;
+	    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.mainbox dl dd.submit:hover{
+	background:#ed4259;
+}
+.mainbox dl dd p{
+	    padding-top: 5px;
+    color: #EF1934;
+}

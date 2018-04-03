@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <title>数组</title>
+</head>
+<body >
+    <script>
+        var put = prompt("请输入数组");
+        var arr = put.split(",").sort((n1,n2)=>{return n1-n2});
+        var b = [];
+        var c = [];
+        for(var i = 0; i < arr.length; i++){
+            if(i % 2 == 0){
+                b.push(arr[i]);
+            }else{
+                c.push(arr[i]);
+            }
+        }
+        c = c.sort((n1,n2) => {return n2 - n1});
+        var result = b.concat(c);
+        alert(result);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/*初始化样式*/
+body, p, ul, dl, dd, ol, table, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PingFangSC-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Microsoft YaHei", "sans-serif";
+  text-align: left;
+  color: #1A1A1A;
+}
+
+article, aside, footer, header, main, nav, section {
+  display: block;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s,background-color .3s;
+  color: #262626;
+  outline: 0;
+}
+
+header {
+  width: 1000px;
+  margin: 0 auto;
+  color: #777777;
+  overflow: hidden;
+}
+
+header .logo {
+  float: left;
+  min-width: 300px;
+  margin-right: 25px;
+}
+
+header .logo img {
+  float: left;
+  width: 30px;
+  margin-top: 15px;
+}
+
+header .logo h1 {
+  float: left;
+  display: block;
+  padding: 19.5px 20px 19.5px 6px;
+  font-size: 24px;
+  font-weight: border;
+  color: #000000;
+  line-height: 24px;
+  text-shadow: none;
+  font-family:'楷体';
+  
+}
+
+header .logo em {
+  height: 24px;
+  margin: 19.5px 20px 19.5px 6px;
+  border-right: 1px solid #D8D8D8;
+  float: left;
+}
+
+header .logo h2 {
+  float: left;
+  display: block;
+  padding: 19.5px 20px 19.5px 6px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #000000;
+  line-height: 24px;
+  text-shadow: none;
+}
+
+header .register {
+  line-height: 64px;
+  float: right;
+}
+
+header .register a {
+  color: #16a4fa;
+  text-decoration: none;
+}
+
+.main {
+  height: 433px;
+  background: #1f1f1f url(../img/login.jpg) 50% 0 no-repeat;
+  background-size: 100% 433px;
+}
+
+.main .login-bg {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main .login-bg .login {
+  position: absolute;
+  width: 350px;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 4px;
+  top: 75px;
+  right: 0;
+}
+
+.main .login-bg .login .login-head {
+  padding: 40px 50px 0;
+  position: relative;
+}
+
+.main .login-bg .login .login-head .title {
+  background: none;
+  position: relative;
+  margin-bottom: 4px;
+  width: 100%;
+  text-align: left;
+  height: 48px;
+  line-height: 48px;
+}
+
+.main .login-bg .login .login-head .title::after {
+  content: "登录";
+  display: block;
+  color: #333333;
+  font-size: 24px;
+  text-align: left;
+}
+
+.main .login-bg .login .login-content {
+  padding: 0 50px;
+}
+
+.main .login-bg .login .login-content .content .box {
+  z-index: 19;
+  position: relative;
+  height: 44px;
+  margin-bottom: 20px;
+  border: 1px solid #c5cddb;
+  background: #fff;
+  font-size: 12px;
+  line-height: 44px;
+}
+
+.main .login-bg .login .login-content .content .box .u-logo {
+  float: left;
+  width: 21px;
+  text-align: center;
+  padding: 0 5px 0 10px;
+}
+
+.main .login-bg .login .login-content .content .box .u-logo .img {
+  display: inline-block;
+  width: 22px;
+  height: 24px;
+  margin-top: 10px;
+  background: url(../img/loginico.png) -251px -86px;
+}
+
+.main .login-bg .login .login-content .content .box .u-logo .pwd-img {
+  display: inline-block;
+  width: 22px;
+  height: 24px;
+  margin-top: 10px;
+  background: url(../img/loginico.png) -291px -86px;
+}
+
+.main .login-bg .login .login-content .content .box .u-input {
+  position: relative;
+  float: left;
+  height: 100%;
+}
+
+.main .login-bg .login .login-content .content .box .u-input label {
+  position: absolute;
+  width: 236px;
+  top: 0;
+  left: 10px;
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: text;
+}
+
+.main .login-bg .login .login-content .content .box .u-input input {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 8px;
+  background: #fff;
+  color: #333;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+.main .login-bg .login .login-content .content .error {
+  top: -31px;
+  left: -1px;
+  border-radius: 2px;
+  font-size: 0;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+.main .login-bg .login .login-content .content .error div {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.main .login-bg .login .login-content .content .error .ico {
+  height: 15px;
+  width: 18px;
+  background: url(../img/loginico.png) -217px -34px;
+}
+
+.main .login-bg .login .login-content .content .error .info {
+  width: 228px;
+  margin-top: -3px;
+  color: #fa5b5b;
+  font-size: 12px;
+  line-height: 20px;
+  vertical-align: top;
+  word-break: break-all;
+}
+
+.main .login-bg .login .login-content .content .login-btn {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.main .login-bg .login .login-content .content .login-btn .btn {
+  display: block;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background: #3C98C9;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+footer {
+  height: 120px;
+  text-align: center;
+  background: gainsboro;
+  padding-top: 20px;
+}
+
+footer nav {
+  padding: 15px 0;
+}
+
+footer nav a {
+  margin: 0 10px;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #a6a6a6;
+}

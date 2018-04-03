@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*初始化样式*/
+body, p, ul, dl, dd, ol, table {
+  margin: 0;
+  padding: 0;
+  font: 0.14222rem "Helvetica Neue Light"; }
+
+article, aside, footer, header, main, nav, section {
+  display: block; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s,background-color .3s;
+  color: #262626;
+  outline: 0; }
+
+ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+button {
+  cursor: pointer; }
+
+.auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  height: 120px;
+   }
+
+header .top {
+   min-width: 980px;
+    position: relative;
+    height: 35px;
+    border-bottom: 1px solid #dcdcdc;
+    background: #fafafa;
+   }
+
+header .top nav {
+  width: 980px;
+  height: 36px;
+  }
+header .top nav a{
+	color: #888888;
+    font-size: 14px;
+    line-height: 35px;
+    margin-left:10px;
+}
+header .top nav a:hover{
+	color: red;
+}
+header .top nav .login-box{
+	float: right;
+}
+header .top nav .login-box a{
+	margin-right:10px;
+}
+header .box-center{
+	width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 84px;
+    overflow: hidden;
+}
+header .box-center>p{
+    height: 52px;
+    margin: 16px 184px 0 0;
+	font-size:45px;
+	    float: left;
+}
+
+header .box-center >p span{
+	font-family:'楷体';
+	font-weight:800;
+	vertical-align:top;
+}
+header .box-center .search-wrap{
+	margin-top: 22px;
+	float: left;
+	
+}
+header .box-center .search-wrap p{
+	float:left;
+}
+header .box-center .search-wrap span{
+	display:inline-block;
+	float:left;
+	width: 42px;
+    height: 42px;
+    background-color: #bf2c24;
+    cursor: pointer;
+}
+header .box-center .search-wrap span img{
+	margin-top:-18px;
+	margin-left:7px;
+}
+header .box-center .search-wrap .search-box{
+	width: 326px;
+    height: 38px;
+    padding: 0 11px;
+    outline: 0;
+}
+header .box-center .book-shelf{
+	overflow: hidden;
+    width: 120px;
+    height: 40px;
+    background: #fff;
+    margin-top: 22px;
+    float: right;
+}
+header .box-center .book-shelf a{
+	display: block;
+    width: 118px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    
+}
+header .box-center .book-shelf a:hover{
+	background-color:#ed4259;
+	color:#fff;
+}
+header .box-center .book-shelf a span{
+	line-height: 38px;
+    overflow: hidden;
+    width: 56px;
+    height: 38px;
+    margin-right: 3px;
+    font-size:16px;
+}
+
+.green{
+	background-color: #71af14;
+	color:#fff;
+}
+.clear {
+  clear: both; }
+.top-nav {
+  margin-bottom: 10px;
+  background: #3e3d43; }
+  .top-nav nav {
+    width: 980px;
+    height: 40px; }
+    .top-nav nav .first {
+      position: relative;
+      width: 242px;
+      height: 40px;
+      float: left;
+      margin-right: 30px;
+      cursor: pointer;
+      background-color: #313035; }
+      .top-nav nav .first span {
+        font-size: 16px;
+        line-height: 38px;
+        display: block;
+        padding-left: 18px;
+        color: #fff; }
+        .top-nav nav .first span em {
+          float: left;
+          width: 16px;
+          height: 14px;
+          margin: 13px 8px 0 0;
+          vertical-align: middle; }
+          .top-nav nav .first span em i {
+            display: block;
+            width: 16px;
+            height: 2px;
+            margin-bottom: 4px;
+            background: #d5d5d6; }
+    .top-nav nav li {
+      width: 128px;
+      height: 40px;
+      float: left;
+      text-align: center; 
+      }
+      .top-nav nav li a:hover{
+       background-color: #313035;
+       border-color:#ed4259;
+      }
+      .top-nav nav li a {
+      	display:inline-block;
+      	width: 128px;
+        font-size: 16px;
+        line-height: 38px;
+        height: 38px;
+        color: #fff;
+        border-bottom: 2px solid #333; }
+
+footer {
+  height: 120px;
+  text-align: center;
+  background: gainsboro;
+  margin-top: 30px; }
+  footer nav {
+    padding: 15px 0; }
+    footer nav a {
+      margin: 0 10px; }
+  footer p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #a6a6a6; }
+
+/*# sourceMappingURL=base.css.map */

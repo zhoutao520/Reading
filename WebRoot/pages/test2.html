@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="周焘">
+        <title></title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .test{
+                width: 700px;
+                margin: 0 auto;
+            }
+            ul, li{
+                text-align: left;
+                list-style: none;
+            }
+            .header span{
+                width: 50px;
+                border: 1px solid #efefef;
+                display: inline-block;
+                padding: 5px 20px;
+            }
+            .header span:last-child{
+                width: 88px;
+            }
+            button{
+                background: #ddd;
+                border: 1px solid #0eb5f0;
+                padding: 5px 20px;
+                border-radius: 3px;
+                cursor: pointer;
+                height: 26px;
+            }
+            #time{
+                width: 100px;
+            }
+            input[type=text]{
+                width: 90px;
+                font-size: 16px;
+            }
+            input{
+                border: 1px solid #efefef;
+            }
+            p{
+                background: #efefef;
+                width: 546px;
+                    cursor: pointer;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test">
+            <ul id="test">
+                <li class="header">
+                    <span id="time">时间</span><span>Tio</span><span>Me</span><span>q</span><span>操作</span>
+                </li>
+            </ul>
+            <p  onclick="add()">添加</p>
+        </div>
+        <script>
+            function add(){
+                var ul = document.getElementById("test");
+                var li = document.createElement("li");
+                ul.appendChild(li);
+                var span1 = document.createElement("span");
+                span1.innerHTML = '<input type="date"/>';
+                li.appendChild(span1);
+                var span2 = document.createElement("span");
+                span2.innerHTML = '<input type="text"/>';
+                li.appendChild(span2);
+                var span3 = document.createElement("span");
+                span3.innerHTML = '<input type="text"/>';
+                li.appendChild(span3);
+                var span4 = document.createElement("span");
+                span4.innerHTML = '<input type="text"/>';
+                li.appendChild(span4);
+                var button = document.createElement("button");
+                button.innerHTML = "计算";
+                li.appendChild(button);
+                button.onclick = function (){
+                    span4.childNodes[0].value = span2.childNodes[0].value * span3.childNodes[0].value * 1.816;
+                }
+                var button2 = document.createElement("button");
+                button2.innerHTML = "保存";
+                li.appendChild(button2);
+                button2.onclick = function (){
+                    var time = span1.childNodes[0].value;
+                    var tio = span2.childNodes[0].value;
+                    var me = span3.childNodes[0].value;
+                    if(span1.childNodes[0].value != "" && span2.childNodes[0].value != "" && span2.childNodes[0].value != ""){
+                        var ajax = new XMLHttpRequest();
+                        ajax.open('get','/BookReading/servlet/TestServlet?time='+time+'&tio='+tio+'&me='+me);
+                        ajax.send();
+                        ajax.onreadystatechange = function () {
+                            if (ajax.readyState==4 &&ajax.status==200) {
+                            　　　console.log(xml.responseText);//输入相应的内容
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

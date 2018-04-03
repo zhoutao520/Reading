@@ -1,0 +1,384 @@
+.bg{
+	width: 980px;
+    margin: 0 auto;
+        overflow: hidden;
+}
+.bg .breadcrumbs{
+	    height: 42px;
+    line-height: 42px;
+    color: #545c66;
+}
+.bg .breadcrumbs a{
+	color:#000;
+}
+.bg .breadcrumbs a:hover{
+	text-decoration: underline;
+	opacity:0.5;
+}
+.bg .breadcrumbs .sep{
+	margin: 0 6px;
+}
+.bg .bg-right{
+	float: right;
+    width: 240px;
+}
+.bg .bg-right .book-status{
+	position: relative;
+    padding-left: 28px;
+    border-left: 1px solid #e5e5e5;
+}
+.bg .bg-right .book-status ul{
+	margin-bottom: 16px;
+    font-size: 14px;
+}
+.bg .bg-right .book-status ul li{
+	height: 17px;
+    padding-bottom: 10px;
+    line-height: 17px;
+    color: #545c66;
+    white-space: nowrap;
+}
+.bg .bg-right .book-status ul li a{
+	color: #5984b3;
+}
+.bg .bg-right .book-status ul li a:hover{
+	text-decoration: underline;
+}
+.bg .bg-right .book-status ul li .tag{
+	height: 80px;
+    overflow: hidden;
+}
+.bg .bg-right .book-status ul li .tag span{
+	float: left;
+    margin: 0 6px 10px 0;
+    font-size: 12px;
+    padding: 0 3px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #5984b3;
+    border-radius: 2px;
+}
+.bg .bg-right .book-status ul li div{
+	float: left;
+}
+.bg .bg-right .book-status .angle{
+	position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 10px;
+    border: 7px solid transparent;
+    border-left-color: #e5e5e5;
+}
+.bg .bg-right .book-status .angle-inner{
+	position: absolute;
+    width: 0;
+    height: 0;
+    left: -1px;
+    top: 11px;
+    border: 6px solid hsla(0,0%,100%,0);
+    border-left-color: #fff;
+}
+.bg .bg-left{
+	float: left;
+    width: 720px;
+}
+.bg .bg-left .book-info{
+	position: relative;
+    height: 237px;
+    transition: height .3s ease;
+}
+.bg .bg-left .book-info .cover{
+	position: relative;
+    float: left;
+    margin-right: 22px;
+    width: 172px;
+    height: 237px;
+}
+.bg .bg-left .book-info .info{
+	    width: 506px;
+	    float: left;
+	        display: inline;
+}
+.bg .bg-left .book-info .info h3{
+	    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: #06080a;
+    line-height: 24px;
+    max-height: 45px;
+}
+.bg .bg-left .book-info .info h3 span{
+	    font-size: 14px;
+    font-weight: 400;
+    color: #545c66;
+    margin-left: 14px;
+}
+.bg .bg-left .book-info .info p{
+	    position: relative;
+    min-height: 110px;
+    max-height: 154px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #545c66;
+    line-height: 22px;
+    text-align: justify;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+.bg .bg-left .book-info .ops{
+	    position: absolute;
+    bottom: 0;
+    left: 194px;
+}
+.bg .bg-left .book-info .ops .read{
+	    float: left;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+        display: inline-block;
+            border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #c9483c;
+    color: #fff;
+    border: 1px solid #c9483c;
+}
+.bg .bg-left .book-info .ops .addSub{
+	float: left;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    background-color: transparent;
+    color: #c9483c;
+    border: 1px solid #c9483c;
+}
+.bg .bg-left .chapters{
+	margin-top: 36px;
+    padding-bottom: 0;
+        position: relative;
+}
+.bg .bg-left .chapters .list{
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.bg .bg-left .chapters .list span{
+	    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+}
+.bg .bg-left .chapters .content{
+	    margin-top: 15px;
+    padding: 0;
+    border: 1px solid #ebe6e1;
+}
+.bg .bg-left .chapters .content ul{
+	overflow: hidden;
+    -webkit-transition: height .5s ease-in;
+        text-align: center;
+}
+.bg .bg-left .chapters .content ul li{
+	float: left;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    width: 50%;
+        color: #655;
+            cursor: pointer;
+}
+.bg .bg-left .chapters .content ul li:hover{
+	background-color: #efefef;
+}
+.bg .bg-left .chapters .content ul .odd{
+	background-color: #efefef;
+}
+.bg .bg-left .chapters .content ul li span{
+	    padding-right: 4px;
+	    padding-left: 70px;
+	        overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+        max-width: 227px;
+            display: inline-block;
+    float: left;
+    color: #655;
+    font-size: 14px;
+}
+.load{
+	height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #eee;
+}
+.bg .bg-left .commnet{
+	margin-top: 36px;
+    margin-bottom: 60px;
+}
+.bg .bg-left .commnet h3{
+	font-size: 16px;
+    font-weight: 700;
+    color: #06080a;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.bg .bg-left .commnet h3 span{
+	font-size: 14px;
+    font-weight: 400;
+    color: #24002a;
+}
+.bg .bg-left .commnet .content{
+	margin-top:17px;
+	position: relative;
+}
+.bg .bg-left .commnet .content .head{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+.bg .bg-left .commnet .content .head img{
+    width: 44px;
+    height: 44px;
+}
+.bg .bg-left .commnet .content .reply{
+	    padding: 0 19px 0 54px;
+	    font-size: 14px;
+    position: relative;
+}
+.bg .bg-left .commnet .content .reply .contentwrap{
+	    position: relative;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ebe6e1;
+}
+.bg .bg-left .commnet .content .reply .contentwrap .angle-l{
+	    position: absolute;
+    width: 0;
+    height: 0;
+    left: -14px;
+    top: 14px;
+    border: 7px solid transparent;
+    border-right-color: #ebe6e1;
+}
+.bg .bg-left .commnet .content .reply .contentwrap .angle-inner-l{
+	position: absolute;
+    width: 0;
+    height: 0;
+    left: -12px;
+    top: 15px;
+    border: 6px solid hsla(0,0%,100%,0);
+    border-right-color: #fff;
+}
+.bg .bg-left .commnet .content .reply .contentwrap textarea{
+	display: block;
+    width: 100%;
+    height: 60px;
+    overflow: auto;
+    font-size: 14px;
+    font-family: Microsoft Yahei;
+    resize: none;
+    border: none;
+    color: #06080a;
+    outline: none;
+}
+.bg .bg-left .commnet .content .reply .contentwrap textarea:focus{
+    outline-offset: -2px;
+}
+.bg .bg-left .commnet .content .reply .bottombar{
+	    height: 44px;
+    line-height: 44px;
+    margin-bottom: 10px;
+}
+.bg .bg-left .commnet .content .reply .bottombar p{
+	float: right;
+    font-size: 12px;
+        margin: 10px;
+}
+.bg .bg-left .commnet .content .reply .bottombar p a{
+        display: inline-block;
+    width: 46px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #c9483c;
+}
+.bg .bg-left .commnet .content li{
+	    position: relative;
+    padding: 20px 0 14px 54px;
+    border-top: 1px solid #e5e5e5;
+}
+.bg .bg-left .commnet .content li .head{
+	    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    overflow: hidden;
+}
+.bg .bg-left .commnet .content li .head img{
+	    width: 44px;
+    height: 44px;
+}
+.bg .bg-left .commnet .content li .info{
+	    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #888;
+}
+.bg .bg-left .commnet .content li blockquote{
+	    font-size: 12px;
+    line-height: 20px;
+    color: #06080a;
+    padding-top: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.bg .bg-left .commnet .content li .opt{
+	    position: relative;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 12px;
+}
+.bg .bg-left .commnet .content li .opt .time{
+	float: left;
+    color: #798594;
+}
+.bg .bg-left .commnet .content li .opt a{
+	    color: #545c66;
+}
+.bg .bg-left .commnet .content li .opt .sep{
+	    color: #545c66;
+    margin: 0 8px;
+}
+.bg .bg-left .commnet .content li .opt .like{
+	    color: #06080a;
+}
+.bg .bg-left .commnet .content li .opt .del:hover{
+	    text-decoration: underline;
+}
+.bg .bg-left .commnet .content li .opt .like i{
+	    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 15px;
+    top: 1px;
+    left: -3px;
+    background: url(../img/commons.png) 0 -50px no-repeat;
+}
+.bg .bg-left .commnet .content li .opt .like i:hover{
+	background-position: 0 -65px;
+}

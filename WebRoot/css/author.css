@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/*初始化样式*/
+body, p, ul, dl, dd, ol, table {
+  margin: 0;
+  padding: 0;
+  font: 0.14222rem "Helvetica Neue Light";
+  line-height: 1.75;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s,background-color .3s;
+  color: #262626;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header .top {
+  background-color: #354052;
+  min-height: 63px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .top .logo {
+  width: 960px;
+  min-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header .top .logo p {
+  float: right;
+  margin: 20px 0 0 0;
+}
+
+header .top .logo p a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  max-width: 260px;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #80858d;
+}
+
+header .top .logo p a:hover {
+  color: #a4acb8;
+}
+
+header .top .logo p a span {
+  margin-top: 3px;
+  margin-right: 5px;
+  margin-left: 15px;
+  background-position: -120px -63px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: text-top;
+  background-image: url(../img/phui.png);
+  background-repeat: no-repeat;
+}
+
+header .top .logo img {
+  float: left;
+  width: 30px;
+  margin-top: 15px;
+}
+
+header .top .logo h1 {
+  float: left;
+  display: block;
+  padding: 19.5px 20px 19.5px 6px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  line-height: 24px;
+  text-shadow: none;
+}
+
+header .top .logo em {
+  height: 24px;
+  margin: 19.5px 20px 19.5px 6px;
+  border-right: 1px solid #D8D8D8;
+  float: left;
+}
+
+header .top .logo h2 {
+  float: left;
+  display: block;
+  padding: 19.5px 20px 19.5px 6px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  line-height: 24px;
+  text-shadow: none;
+}
+
+article {
+  width: 960px;
+  margin-top: 30px;
+  position: relative;
+}
+
+article .side-bg {
+  border: #d9dde0 solid 1px;
+  width: 198px;
+  background: #f8f9fb;
+  height: 100%;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+article .side {
+  width: 198px;
+  float: left;
+}
+
+article .side ul {
+  width: 198px;
+}
+
+article .side ul .current {
+  background: #eff0f4;
+}
+
+article .side ul li {
+  border-bottom: #d9dde0 solid 1px;
+  line-height: 44px;
+  width: 100%;
+  position: relative;
+}
+
+article .side ul li:hover {
+  background: #eff0f4;
+}
+
+article .side ul h4 {
+  height: 44px;
+  line-height: 44px;
+}
+
+article .side ul em {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  margin: 0 5px 0 15px;
+}
+
+article .side ul a {
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+article .side ul a:hover {
+  text-decoration: underline;
+}
+
+article .side ul .all-book em {
+  background: url(../img/icon-sprites.png) no-repeat 0 -155px;
+}
+
+article .side ul .incomes em {
+  background: url(../img/icon-sprites.png) no-repeat 0 -172px;
+}
+
+article .side ul .comment em {
+  background: url(../img/icon-sprites.png) no-repeat -20px -172px;
+}
+
+article .side ul .message em {
+  background: url(../img/icon-sprites.png) no-repeat 0 -206px;
+}
+
+article .main {
+  margin-left: 220px;
+}
+
+article .main .content {
+  border: #d8dde0 solid 1px;
+  min-height: 750px;
+  background: #f8f9fb;
+  padding: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  height: 120px;
+  text-align: center;
+  background: gainsboro;
+  margin-top: 30px;
+}
+
+footer nav {
+  padding: 15px 0;
+}
+
+footer nav a {
+  margin: 0 10px;
+}
+
+footer p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #a6a6a6;
+}
+
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empty {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.unsigned {
+  padding: 200px 0 0 200px;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.unsigned em {
+  background: url(../img/icon-sprites.png) no-repeat 0 -32px;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}

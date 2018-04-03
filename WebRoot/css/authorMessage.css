@@ -1,0 +1,21 @@
+h1 {
+  color: #505155;
+  font-size: 18px; }
+
+table {
+  margin: 20px 0 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px;
+  border-color: grey; }
+  table th {
+    background: #eff0f4;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px; }
+  table .msg-con {
+    text-align: left;
+    text-indent: 33px; }
+
+/*# sourceMappingURL=authorMessage.css.map */

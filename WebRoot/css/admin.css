@@ -1,0 +1,117 @@
+ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+     padding: 0;
+     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+a{
+text-decoration: none;	
+}
+aside{
+	min-height:575px;
+    background: #eef1f6;
+}
+.el-input{
+	width:200px;
+	margin:0 20px 20px 0;
+}
+.add{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:#eef1f6;
+	color: #878d99;
+	height: 40px;
+	cursor: pointer;
+}
+.addAdmin{
+	    width: 320px;
+    height: 260px;
+    border: 1px solid #409EFF;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 99;
+}
+.addAdmin .el-form-item{
+	margin-bottom: 0!important;
+}
+.login{
+	border-radius: 5px;
+    background-clip: padding-box;
+    margin: 100px auto;
+    width: 350px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 25px #cac6c6;
+}
+.submit .el-form-item__content{
+	margin: 0 50px !important;
+}
+.login h3{
+	font-family: "楷体";
+	        font-size: 22px;
+    line-height: 60px;
+           color: #409EFF;
+           text-align: center;
+}
+.logo{
+	    font-family: "楷体";
+	        font-size: 22px;
+    line-height: 60px;
+           color: #fff;
+}
+.block{
+	background: #eef1f6;
+    border: 1px solid #eef1f6;
+    margin-top: 10px;
+}
+.block button{
+	background:none !important;
+}
+.block li{
+	background:none;
+}
+.user{
+	font-family: FZZCYSK;
+	        font-size: 14px;
+    line-height: 60px;
+           color: #fff;
+               text-align: center;
+}
+.user span{
+	    cursor: pointer;
+	    margin-left: 20px;	
+color: red;	
+}
+ .el-header{
+    background-color: #409EFF;
+  }
+  .demo-table-expand {
+    font-size: 0;
+  }
+  .demo-table-expand label {
+    width: 90px;
+    color: #99a9bf;
+  }
+  .demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .cell{
+    height: 30px;
+    line-height:30px !important;
+  }
+  .pro{
+  display:inline-block;
+  text-indent: 2em;
+  	width:1000px;
+  }
+  thead th{
+  	    background-color: #eef1f6;
+  }
+  .op{
+  	    padding: 7px 0;
+  }

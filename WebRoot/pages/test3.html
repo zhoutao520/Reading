@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="周焘">
+        <title>乘法表</title>
+        <style>
+            p{
+                text-align: center;
+                margin: 0;
+            }
+            span{
+                display: inline-block;
+                padding: 5px 15px;
+                border: 1px solid #e6d7d7;
+                border-bottom: 0;
+                border-left: 0;
+            }
+            span:first-child{
+                border-left: 1px solid #e6d7d7;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mul"></div>
+        <script>
+            function mul() {
+                var i, j, pNode, spanNode, text;
+                for(i = 1; i <= 9; i++){
+                    pNode = document.createElement("p");
+                    for(j = 1; j <= i; j++){
+                        spanNode = document.createElement("span");
+                        text = document.createTextNode(i + "x" + j + "="+i*j);
+                        spanNode.appendChild(text);
+                        pNode.appendChild(spanNode);
+                        if(i == 9){
+                            spanNode.style.borderBottom = "1px solid #e6d7d7";
+                        }
+                    }
+                    
+                    document.getElementById("mul").appendChild(pNode);
+                }
+            }
+            mul();
+        </script>
+    </body>
+</html>

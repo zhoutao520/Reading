@@ -1,0 +1,92 @@
+.content-name {
+  font-size: 18px;
+  border-bottom: #eee dashed 1px;
+  position: relative;
+  color: #505155;
+  height: 38px;
+  line-height: 38px; }
+  .content-name p {
+    position: absolute;
+    line-height: 38px;
+    right: 10px;
+    top: 0;
+    font-size: 14px;
+    color: #999; }
+    .content-name p a {
+      color: #fff;
+      background: #6291c5;
+      padding: 5px 10px;
+      font-size: 14px;
+      display: inline-block;
+      line-height: 20px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #c5cacd;
+      border-radius: 2px; }
+  .content-name h2 {
+    font-size: 100%;
+    font-weight: 400;
+    float: left; }
+    .content-name h2 span {
+      font-size: 12px;
+      padding-left: 15px; }
+
+table {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 12px;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  border-color: grey; }
+  table th {
+    height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #505156;
+    background: #eff0f4;
+    border: #d8dde0 solid 1px;
+    font-style: normal; }
+  table td {
+    height: 50px;
+    text-align: center;
+    padding: 20px 10px;
+    border: #d8dde0 solid 1px; }
+  table .book-info {
+    text-align: left;
+    position: relative;
+    width: 210px; }
+    table .book-info .pic {
+      float: left;
+      width: 90px;
+      height: 125px;
+      margin-right: 5px; }
+      table .book-info .pic img {
+        width: 90px;
+        height: 125px; }
+    table .book-info > p {
+      line-height: 21px; }
+    table .book-info .word {
+      color: #999; }
+    table .book-info .ops {
+      position: absolute;
+      top: 95px;
+      left: 95px; }
+  table a {
+    color: #1d5ca0;
+    outline: medium none;
+    text-decoration: none; }
+    table a:hover {
+      text-decoration: underline; }
+  table .intro {
+    width: 120px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden; }
+  table .time {
+    color: #999;
+    cursor: pointer; }
+  table tbody {
+    box-shadow: 0 1px 2px #cdcdcd;
+    color: #303030; }
+
+/*# sourceMappingURL=authorBook.css.map */
